@@ -114,7 +114,7 @@ class GameView: UIView {
             $0.left.equalToSuperview()
             $0.centerYWithinMargins.equalToSuperview()
         }
-        pauseButton.setContentCompressionResistancePriority(UILayoutPriorityRequired, for: .horizontal)
+        pauseButton.setContentCompressionResistancePriority(UILayoutPriority.required, for: .horizontal)
         scoreView.snp.makeConstraints {
             $0.centerWithinMargins.equalToSuperview()
             $0.left.greaterThanOrEqualTo(pauseButton.snp.right).offset(16)
@@ -137,7 +137,7 @@ class GameView: UIView {
             $0.right.equalToSuperview()
             $0.centerYWithinMargins.equalToSuperview()
         }
-        restartButton.setContentCompressionResistancePriority(UILayoutPriorityRequired, for: .horizontal)
+        restartButton.setContentCompressionResistancePriority(UILayoutPriority.required, for: .horizontal)
         boardContainerView.snp.makeConstraints {
             $0.top.equalTo(topView.snp.bottom)
             $0.left.equalTo(16)

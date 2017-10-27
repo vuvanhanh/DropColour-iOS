@@ -33,7 +33,7 @@ class GameTimer: NSObject {
         timer = nil
     }
 
-    func timerTick() {
+    @objc func timerTick() {
         action()
     }
 

@@ -117,11 +117,11 @@ class InfoView: UIView {
 
     // MARK: Tap gestures
 
-    func tapLogoDescriptionView(_ sender: UITapGestureRecognizer) {
+    @objc func tapLogoDescriptionView(_ sender: UITapGestureRecognizer) {
         delegate?.infoViewDidTapCompanyLogo()
     }
 
-    func tapAuthor(_ sender: UITapGestureRecognizer) {
+    @objc func tapAuthor(_ sender: UITapGestureRecognizer) {
         guard let view = sender.view as? AuthorView else { return }
         delegate?.infoViewDidTapAuthor(view.author)
     }

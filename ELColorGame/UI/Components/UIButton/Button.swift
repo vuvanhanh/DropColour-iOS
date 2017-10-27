@@ -42,7 +42,7 @@ class Button: UIButton {
         addTarget(self, action: #selector(Button.didTapOnButton(_:)), for: .touchUpInside)
     }
 
-    func didTapOnButton(_ sender: UIButton) {
+    @objc func didTapOnButton(_ sender: UIButton) {
         buttonActionClosure?()
     }
 
